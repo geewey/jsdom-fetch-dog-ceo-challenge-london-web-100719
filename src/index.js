@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         dropdown.addEventListener("change", function(e) {
             let selected = dropdown.value;
             for (li of dogListItems) {
-                if (li.innerText.slice(0,1) == selected) {
+                if (selected == li.innerText.slice(0,1) || selected == "all") {
                     li.style.display = "";
                 } else {
                     li.style.display = "none";
